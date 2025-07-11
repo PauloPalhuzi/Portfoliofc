@@ -586,5 +586,57 @@ h1 {
   font-weight: bold;
   cursor: pointer;
 }
+.galeria-certificados {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.certificado-item {
+  text-align: center;
+  width: 160px;
+}
+
+.miniatura {
+  width: 100%;
+  height: auto;
+  border: 2px solid var(--primaria);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.miniatura:hover {
+  transform: scale(1.05);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.85);
+  text-align: center;
+  padding-top: 50px;
+}
+
+.imagem-modal {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+.fechar {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 36px;
+  color: white;
+  cursor: pointer;
+}
 
 
