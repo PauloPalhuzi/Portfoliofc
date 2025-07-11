@@ -2,149 +2,143 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Dev Portifolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Dev Portifolio</title>
 </head>
 
 <body>
+  <div class="particulas"></div>
 
-    <div class="particulas"></div>
+  <nav class="navegacao">
+    <ul class="menu">
+      <li><a href="#inicio" class="menu-link">Ínicio</a></li>
+      <li><a href="#sobre" class="menu-link">Sobre</a></li>
+      <li><a href="#projetos" class="menu-link">Projetos</a></li>
+      <li><a href="#contatos" class="menu-link">Contato</a></li>
+    </ul>
+  </nav>
 
-    <nav class="navegacao">
-        <ul class="menu">
-            <li><a href="#inicio" class="menu-link">Ínicio</a></li>
-            <li><a href="#sobre" class="menu-link">Sobre</a></li>
-            <li><a href="#projetos" class="menu-link">Projetos</a></li>
-            <li><a href="#contatos" class="menu-link">Contato</a></li>
-        </ul>
-    </nav>
+  <main id="inicio" class="cabecalho">
+    <img src="./img/paulo.png" alt="foto de paulo" class="foto-perfil" />
+    <h1>Paulo Palhuzi</h1>
+    <p class="cabecalho-sub-titulo">Desenvolvedor Front End</p>
+  </main>
 
-    <main id="inicio" class="cabecalho">
-        <img src="./img/paulo.png" alt="foto de paulo" class="foto-perfil">
-        <h1>Paulo Palhuzi</h1>
-        <p class="cabecalho-sub-titulo">Desenvolvedor Front End</p>
-    </main>
+  <section id="sobre" class="sobre">
+    <h2 class="sobre-titulo">Sobre Mim</h2>
+    <div class="sobre-caixa">
+      <p class="sobre-paragrafo">
+        Sou Paulo Palhuzi, profissional em transição para a área de Tecnologia da Informação, atualmente
+        cursando o 2º módulo de Desenvolvimento de Sistemas na ETEC Guararapes.
+        Tenho 7 anos de experiência administrativa, forte vivência internacional na Argentina (fluente em espanhol), e
+        hoje atuo como estagiário de TI na Prefeitura Municipal de Guararapes.
+        Participei de um Bootcamp Full Stack de 200 horas com foco prático em C#, .NET, Angular e MySQL, desenvolvendo
+        projetos que consolidaram minha lógica de programação.
+        Tenho interesse especial em suporte técnico e, progressivamente, busco migrar para desenvolvimento de sistemas.
+        Possuo perfil proativo, excelente comunicação, disciplina e facilidade de aprendizado. Estou em busca de
+        oportunidades para aplicar meus conhecimentos, crescer profissionalmente e contribuir com as equipes em que atuar.
+      </p>
+    </div>
+  </section>
 
-    <section id="sobre" class="sobre">
-        <h2 class="sobre-titulo">Sobre Mim</h2>
-        <div class="sobre-caixa">
-            <p class="sobre-paragrafo">
-                Sou Paulo Palhuzi, profissional em transição para a área de Tecnologia da Informação, atualmente
-                cursando o 2º módulo de Desenvolvimento de Sistemas na ETEC Guararapes.
-                Tenho 7 anos de experiência administrativa, forte vivência internacional na Argentina (fluente em
-                espanhol), e hoje atuo como estagiário de TI na Prefeitura Municipal de Guararapes.
-                Participei de um Bootcamp Full Stack de 200 horas com foco prático em C#, .NET, Angular e MySQL,
-                desenvolvendo projetos que consolidaram minha lógica de programação.
-                Tenho interesse especial em suporte técnico e, progressivamente, busco migrar para desenvolvimento de
-                sistemas.
-                Possuo perfil proativo, excelente comunicação, disciplina e facilidade de aprendizado. Estou em busca de
-                oportunidades para aplicar meus conhecimentos, crescer profissionalmente e contribuir com as
-                equipes em que atuar.
+  <section id="projetos" class="projetos">
+    <h2 class="projetos-titulo">Meus Projetos</h2>
+    <div class="projetos-caixa">
+      <a href="https://paulopalhuzi.github.io/Loja/" target="_blank" class="projetos-link">
+        <div class="projetos-card">
+          <img src="./img/projeto1.png" alt="Projeto 1" class="projetos-imagem" />
+          <div class="caixa-textos-projeto">
+            <h3 class="info-projetos">Projeto Loja e-commerce funcional</h3>
+            <p class="paragrafo-projetos">
+              Este projeto é uma loja virtual desenvolvida com foco em desempenho, usabilidade e organização de produtos.
+              Utiliza HTML5, CSS3 e JavaScript no front-end para criar uma interface moderna, responsiva e interativa, com
+              carrossel de produtos, filtros e um carrinho de compras dinâmico, onde os usuários podem adicionar ou remover
+              itens com atualização automática do valor total.
+              No back-end, foi utilizado PHP para gerenciar cadastros, login de usuários, sessões e o banco de dados,
+              garantindo uma estrutura funcional para simular a operação real de uma loja.
+              O sistema também inclui um painel administrativo, onde é possível cadastrar, editar e remover produtos de forma
+              prática e segura.
+              Este projeto representa uma aplicação completa de conhecimentos em desenvolvimento web, unindo tecnologias de
+              front-end e back-end em um ambiente integrado e funcional.
             </p>
+          </div>
         </div>
-    </section>
+      </a>
 
-    <section id="projetos" class="projetos">
-        <h2 class="projetos-titulo">Meus Projetos</h2>
-        <div class="projetos-caixa">
-
-            <a href="https://paulopalhuzi.github.io/Loja/" target="_blank" class="projetos-link">
-                <div class="projetos-card">
-                    <img src="./img/projeto1.png" alt="Projeto 1" class="projetos-imagem">
-                    <div class="caixa-textos-projeto">
-                        <h3 class="info-projetos">Projeto Loja e-commerce funcional</h3>
-                        <p class="paragrafo-projetos">
-                            Este projeto é uma loja virtual desenvolvida com foco em desempenho, usabilidade e
-                            organização de produtos.
-                            Utiliza HTML5, CSS3 e JavaScript no front-end para criar uma interface moderna, responsiva e
-                            interativa, com carrossel de produtos,
-                            filtros e um carrinho de compras dinâmico, onde os usuários podem adicionar ou remover itens
-                            com atualização automática do valor total.
-                            No back-end, foi utilizado PHP para gerenciar cadastros, login de usuários, sessões e o
-                            banco de dados, garantindo uma estrutura funcional para simular a operação real de uma loja.
-                            O sistema também inclui um painel administrativo, onde é possível cadastrar, editar e
-                            remover produtos de forma prática e segura.
-                        </p>
-                    </div>
-                </div>
-            </a>
-
-            <a href="https://paulopalhuzi.github.io/Web-site-make-up/" target="_blank" class="projetos-link">
-                <div class="projetos-card">
-                    <img src="./img/projeto2.png" alt="Projeto 2" class="projetos-imagem">
-                    <div class="caixa-textos-projeto">
-                        <h3 class="info-projetos">Make Glamour</h3>
-                        <p class="paragrafo-projetos">
-                            O Glamour Rose é um projeto de loja virtual voltado para o público feminino, com foco em
-                            cosméticos e bem-estar. A interface moderna e responsiva foi desenvolvida com HTML5, CSS3 e
-                            JavaScript. Conta com carrossel de produtos, categorias organizadas e carrinho de compras
-                            dinâmico.
-                        </p>
-                    </div>
-                </div>
-            </a>
-
-            <div class="projetos-card">
-                <img src="./img/projeto3.jpg" alt="Projeto em breve" class="projetos-imagem">
-                <div class="caixa-textos-projeto">
-                    <h3 class="info-projetos">Em Breve</h3>
-                    <p class="paragrafo-projetos">Loading...</p>
-                </div>
-            </div>
-
+      <a href="https://paulopalhuzi.github.io/Web-site-make-up/" target="_blank" class="projetos-link">
+        <div class="projetos-card">
+          <img src="./img/projeto2.png" alt="Projeto 1" class="projetos-imagem" />
+          <div class="caixa-textos-projeto">
+            <h3 class="info-projetos">Make Glamour</h3>
+            <p class="paragrafo-projetos">
+              O Glamour Rose é um projeto de loja virtual desenvolvido com o objetivo de simular uma experiência real de
+              e-commerce voltado para o público feminino, com foco em cosméticos, beleza e bem-estar. A proposta do site é
+              unir estética, funcionalidade e desempenho, proporcionando uma navegação fluida e intuitiva para o usuário. A
+              interface foi construída utilizando HTML5, CSS3 e JavaScript, garantindo um visual elegante e moderno, com um
+              carrossel de produtos, categorias organizadas, e um sistema de carrinho de compras dinâmico, onde é possível
+              adicionar e remover itens com atualização automática do valor total. O layout é totalmente responsivo,
+              funcionando perfeitamente em computadores, tablets e celulares.
+            </p>
+          </div>
         </div>
-    </section>
+      </a>
 
-    <section id="contatos" class="contatos">
-        <h2 class="contatos-titulo">Entre em Contato</h2>
-
-        <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
-            <div class="grupo-form">
-                <input placeholder="Nome" class="campo-form" id="nome">
-            </div>
-
-            <div class="grupo-form">
-                <textarea class="campo-form" placeholder="Digite sua Mensagem" rows="6" id="mensagem"></textarea>
-            </div>
-
-            <button type="submit" class="botao-form">Enviar WhatsApp</button>
-        </form>
-
-        <!-- Título animado das redes -->
-        <h2 class="redes-titulo animado">Minhas Redes Sociais</h2>
-
-        <!-- Redes sociais com ícones -->
-        <div class="redes-sociais">
-            <a href="https://www.instagram.com/@paulopalhuzi_" target="_blank" class="icone-rede" aria-label="Instagram">
-                <img src="./img/2111463.png" alt="Instagram">
-            </a>
-            <a href="https://github.com/paulopalhuzi" target="_blank" class="icone-rede" aria-label="GitHub">
-                <img src="./733553.png" alt="GitHub">
-            </a>
-            <a href="https://www.linkedin.com/paulopalhuziin/seu_usuario" target="_blank" class="icone-rede" aria-label="LinkedIn">
-                <img src="./img/174857.png" alt="LinkedIn">
-            </a>
+      <div class="projetos-card">
+        <img src="./img/projeto3.jpg" alt="Projeto 1" class="projetos-imagem" />
+        <div class="caixa-textos-projeto">
+          <h3 class="info-projetos">Embreve</h3>
+          <p class="paragrafo-projetos">Loading...</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <script>
-        function enviarWhats(event) {
-            event.preventDefault();
+  <section id="contatos" class="contatos">
+    <h2 class="contatos-titulo">Entre em Contato</h2>
 
-            const nome = document.getElementById('nome').value;
-            const mensagem = document.getElementById('mensagem').value;
-            const telefone = '5518997048001';
+    <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+      <div class="grupo-form">
+        <input placeholder="Nome" class="campo-form" id="nome" />
+      </div>
 
-            const texto = `Olá! Me chamo ${nome}, ${mensagem}`;
-            const msgFormatada = encodeURIComponent(texto);
-            const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
+      <div class="grupo-form">
+        <textarea class="campo-form" placeholder="Digite sua Mensagem" rows="6" id="mensagem"></textarea>
+      </div>
 
-            window.open(url, '_blank');
-        }
-    </script>
+      <button type="submit" class="botao-form">Enviar WhatsApp</button>
+    </form>
 
+    <h2 class="redes-titulo">Redes Sociais</h2>
+    <div class="redes-sociais">
+      <a href="https://www.instagram.com/seu_usuario" target="_blank" class="icone-rede">
+        <img src="./img/instagram.png" alt="Instagram" />
+      </a>
+      <a href="https://github.com/paulopalhuzi" target="_blank" class="icone-rede">
+        <img src="./img/github.png" alt="GitHub" />
+      </a>
+      <a href="https://www.linkedin.com/in/seu_usuario" target="_blank" class="icone-rede">
+        <img src="./img/linkedin.png" alt="LinkedIn" />
+      </a>
+    </div>
+  </section>
+
+  <script>
+    function enviarWhats(event) {
+      event.preventDefault();
+
+      const nome = document.getElementById("nome").value;
+      const mensagem = document.getElementById("mensagem").value;
+      const telefone = "5518997048001";
+
+      const texto = `Olá! Me chamo ${nome}, ${mensagem}`;
+      const msgFormatada = encodeURIComponent(texto);
+
+      const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
+      window.open(url, "_blank");
+    }
+  </script>
 </body>
 
 </html>
