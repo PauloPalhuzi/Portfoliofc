@@ -142,6 +142,22 @@
   </section>
 
   <script>
+
+    <script>
+  // Efeito de animação ao rolar para baixo
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('mostrar');
+      }
+    });
+  });
+
+  document.querySelectorAll('section').forEach(secao => {
+    observer.observe(secao);
+  });
+</script>
+
     function enviarWhats(event) {
       event.preventDefault();
       const nome = document.getElementById("nome").value;
