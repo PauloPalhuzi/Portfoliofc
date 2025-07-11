@@ -359,3 +359,30 @@ h1 {
         padding: 0.7rem 1rem;
     }
 }
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.icone-rede {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.icone-rede img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: brightness(0) invert(1); /* Branco no fundo escuro */
+}
+
+.icone-rede:hover {
+    transform: scale(1.2);
+}
+
