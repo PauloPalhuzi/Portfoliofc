@@ -124,21 +124,27 @@
     </div>
   </section>
 
-  <script>
-    function enviarWhats(event) {
-      event.preventDefault();
+<script>
+  function enviarWhats(event) {
+    event.preventDefault();
 
-      const nome = document.getElementById("nome").value;
-      const mensagem = document.getElementById("mensagem").value;
-      const telefone = "5518997048001";
+    const nome = document.getElementById("nome").value.trim();
+    const mensagem = document.getElementById("mensagem").value.trim();
+    const telefone = "5518997048001";
 
-      const texto = Olá! Me chamo ${nome}, ${mensagem};
-      const msgFormatada = encodeURIComponent(texto);
-
-      const url = https://wa.me/${telefone}?text=${msgFormatada};
-      window.open(url, "_blank");
+    if (!nome || !mensagem) {
+      alert("Por favor, preencha o nome e a mensagem.");
+      return;
     }
-  </script>
+
+    const texto = `Olá! Me chamo ${nome}, ${mensagem}`;
+    const msgFormatada = encodeURIComponent(texto);
+    const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
+
+    window.open(url, "_blank");
+  }
+</script>
+
 </body>
 
 </html>
