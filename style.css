@@ -450,3 +450,97 @@ h1 {
   outline: 2px solid var(--secundaria);
   outline-offset: 4px;
 }
+
+.secao-titulo {
+  font-size: 2.8rem;
+  color: var(--primaria);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hardskills, .softskills, .certificados, .timeline {
+  padding: 5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hard Skills com ícones */
+.icones-skill {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.icone-item {
+  text-align: center;
+  width: 100px;
+}
+
+.icone-item img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 0.5rem;
+}
+
+.icone-item p {
+  font-size: 0.9rem;
+  color: var(--claro);
+}
+
+/* Cursos e certificados */
+.lista-certificados {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.lista-certificados li {
+  margin: 1rem 0;
+}
+
+.lista-certificados a {
+  color: var(--claro);
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.lista-certificados a:hover {
+  color: var(--primaria);
+  text-decoration: underline;
+}
+
+/* Soft Skills */
+.lista-soft {
+  list-style: none;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 2rem;
+  padding-left: 1rem;
+}
+
+/* Timeline */
+.linha-tempo {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-left: 3px solid var(--primaria);
+  padding-left: 2rem;
+  margin-top: 2rem;
+}
+
+.evento {
+  position: relative;
+  padding-left: 1rem;
+}
+
+.evento::before {
+  content: "●";
+  position: absolute;
+  left: -1.3rem;
+  color: var(--secundaria);
+  font-size: 1.2rem;
+}
+
