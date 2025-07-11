@@ -114,39 +114,31 @@
 
 <section id="certificados" class="certificados">
   <h2 class="secao-titulo">Cursos e Certificados</h2>
-  <ul class="lista-certificados">
-    <li>
-      🔗 Bootcamp FullStack Dio (200h) - 2024
-      <br />
-      <a href="./img/as.pdf" target="_blank" class="abrir-pdf">📄 Ver Certificado (PDF)</a>
-    </li>
-    <li>
-      🔗 Introdução a Al-900 com a Microsoft
-      <br />
-      <a href="./img/IA900.pdf" class="abrir-modal">📜 Ver Certificado</a>
-    </li>
-    <li>
-      🔗 Badge: Git/GitHub Essentials
-      <br />
-      <a href="#img3" class="abrir-modal">📜 Ver Badge</a>
-    </li>
-  </ul>
-</section>
-  <!-- Modais (Lightbox Simples) -->
-  <div id="img1" class="modal">
-    <span class="fechar">&times;</span>
-    <img src="./img/as.pdf" alt="Certificado DIO Fullstack" class="imagem-modal">
-  </div>
-  <div id="img2" class="modal">
-    <span class="fechar">&times;</span>
-    <img src="./img/ia900.pdf" alt="Certificado Lógica de Programação" class="imagem-modal">
-  </div>
-  <div id="img3" class="modal">
-    <span class="fechar">&times;</span>
-    <img src="./img/badge-github.png" alt="Badge Git e GitHub" class="imagem-modal">
-  </div>
-</section>
+  <div class="galeria-certificados">
+    
+    <div class="certificado-item">
+      <img src="./img/cert-dio-thumb.jpg" alt="Miniatura Certificado DIO" class="miniatura" data-img="./img/cert-dio.jpg">
+      <p>Bootcamp FullStack Dio (200h)</p>
+    </div>
 
+    <div class="certificado-item">
+      <img src="./img/cert-ia900-thumb.jpg" alt="Miniatura IA 900" class="miniatura" data-img="./img/cert-ia900.jpg">
+      <p>Introdução à IA-900 Microsoft</p>
+    </div>
+
+    <div class="certificado-item">
+      <img src="./img/badge-git-thumb.png" alt="Badge GitHub" class="miniatura" data-img="./img/badge-github.png">
+      <p>Badge: Git/GitHub Essentials</p>
+    </div>
+
+  </div>
+
+  <!-- Modal -->
+  <div id="modal-certificado" class="modal">
+    <span class="fechar">&times;</span>
+    <img id="img-ampliada" class="imagem-modal" src="" alt="Certificado Ampliado">
+  </div>
+</section>
 
 
 <section id="softskills" class="softskills">
