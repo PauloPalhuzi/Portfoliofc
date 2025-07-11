@@ -409,35 +409,43 @@ h1 {
   }
 }
 
+.redes-titulo {
+  font-size: 2.8rem; /* mesmo tamanho do "Entre em Contato" */
+  color: var(--primaria);
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  animation: pulsar 1.8s infinite ease-in-out;
+  user-select: none;
+}
+
 .redes-sociais {
   display: flex;
   justify-content: center;
-  gap: 2.5rem;
-  margin-top: 0.5rem;
+  gap: 3rem;
+  margin-top: 1rem;
   padding-bottom: 4rem;
 }
 
 .icone-rede img {
-  width: 48px;
-  height: 48px;
-  transition: transform 0.3s ease;
-  filter: brightness(100%) invert(100%); /* Ícones brancos para seu fundo escuro */
+  width: 56px; /* aumentado de 48 para 56 */
+  height: 56px;
   cursor: pointer;
   display: block;
+  filter: brightness(100%) invert(100%);
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .icone-rede:hover img {
-  transform: scale(1.2);
+  transform: scale(1.25);
   filter: brightness(85%) invert(75%);
 }
 
-/* Remove sublinhado de link e mantém cor inherente */
 .icone-rede {
   text-decoration: none;
   outline: none;
 }
 
-/* Foco acessível */
 .icone-rede:focus img {
   outline: 2px solid var(--secundaria);
   outline-offset: 4px;
