@@ -251,6 +251,27 @@
     const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
 
     window.open(url, "_blank");
+
+     document.querySelectorAll('.abrir-modal').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      const modalId = this.getAttribute('href');
+      document.querySelector(modalId).style.display = 'block';
+    });
+  });
+
+  document.querySelectorAll('.fechar').forEach(btn => {
+    btn.addEventListener('click', function () {
+      this.parentElement.style.display = 'none';
+    });
+  });
+
+  // Fecha modal ao clicar fora da imagem
+  window.addEventListener('click', function (e) {
+    if (e.target.classList.contains('modal')) {
+      e.target.style.display = 'none';
+    }
+  });
   }
 </script>
 
