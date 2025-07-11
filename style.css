@@ -385,46 +385,60 @@ h1 {
 
 /* ===== Ajustes na seção de redes sociais ===== */
 
-section#contatos {
-    padding-bottom: 8rem; /* aumenta o espaçamento inferior para o layout */
-}
+/* ===== Estilo redes sociais ===== */
 
 .redes-titulo {
-    font-size: 3rem;
-    color: var(--claro);
-    text-align: center;
-    margin: 3rem auto 2rem auto;
-    max-width: 800px; /* evita esticar demais em telas grandes */
-    animation: aparecer 1s ease-in-out forwards;
-    opacity: 0;
-    padding: 0 1rem; /* garante margem interna em telas pequenas */
+  font-size: 2.8rem; /* Tamanho semelhante ao 'Entre em Contato' */
+  color: var(--primaria);
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  animation: pulsar 1.8s infinite ease-in-out;
+  user-select: none;
+}
+
+@keyframes pulsar {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.05);
+  }
 }
 
 .redes-sociais {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    flex-wrap: wrap;
-    margin: 0 auto 4rem auto;
-    max-width: 500px; /* limita a largura total */
-    padding: 0 1rem;
-}
-
-.icone-rede {
-    width: 80px;
-    height: 80px;
-    transition: transform 0.3s ease;
-    display: inline-block;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 0.5rem;
+  padding-bottom: 4rem;
 }
 
 .icone-rede img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    filter: brightness(0) invert(1);
+  width: 48px;
+  height: 48px;
+  transition: transform 0.3s ease;
+  filter: brightness(100%) invert(100%); /* Ícones brancos para seu fundo escuro */
+  cursor: pointer;
+  display: block;
 }
 
-.icone-rede:hover {
-    transform: scale(1.2);
+.icone-rede:hover img {
+  transform: scale(1.2);
+  filter: brightness(85%) invert(75%);
+}
+
+/* Remove sublinhado de link e mantém cor inherente */
+.icone-rede {
+  text-decoration: none;
+  outline: none;
+}
+
+/* Foco acessível */
+.icone-rede:focus img {
+  outline: 2px solid var(--secundaria);
+  outline-offset: 4px;
 }
