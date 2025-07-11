@@ -544,6 +544,7 @@ h1 {
   font-size: 1.2rem;
 }
 
+/* LISTA PADRÃO DE LINKS */
 .lista-certificados li {
   margin-bottom: 1rem;
 }
@@ -555,6 +556,7 @@ h1 {
   font-size: 0.9rem;
 }
 
+/* GALERIA DE CERTIFICADOS COM MINIATURAS */
 .galeria-certificados {
   display: flex;
   flex-wrap: wrap;
@@ -572,6 +574,7 @@ h1 {
   height: auto;
   border: 2px solid var(--primaria);
   border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   transition: transform 0.3s ease;
 }
@@ -580,7 +583,13 @@ h1 {
   transform: scale(1.05);
 }
 
-/* Modal Geral */
+.certificado-item p {
+  font-size: 0.95rem;
+  color: #eee;
+  margin-top: 8px;
+}
+
+/* MODAL COM IMAGEM AMPLIADA */
 .modal {
   display: none;
   position: fixed;
@@ -592,17 +601,22 @@ h1 {
   background-color: rgba(0,0,0,0.85);
   text-align: center;
   padding-top: 50px;
+  transition: opacity 0.3s ease;
+  opacity: 0;
 }
 
-/* Imagem no Modal */
+.modal[style*="display: block"] {
+  opacity: 1;
+}
+
 .imagem-modal {
-  max-width: 20%;
-  max-height: 20%;
+  max-width: 90%;
+  max-height: 90%;
   border: 4px solid white;
   border-radius: 10px;
 }
 
-/* Botão de fechar */
+/* BOTÃO DE FECHAR MODAL */
 .fechar {
   position: absolute;
   top: 20px;
@@ -613,22 +627,7 @@ h1 {
   cursor: pointer;
 }
 
-.miniatura {
-  /* ... seu CSS atual ... */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-}
-.certificado-item p {
-  font-size: 0.95rem;
-  color: #eee;
-  margin-top: 8px;
-}
-.modal {
-  transition: opacity 0.3s ease;
-  opacity: 0;
-}
-.modal[style*="display: block"] {
-  opacity: 1;
-}
+/* RESPONSIVO */
 @media (max-width: 500px) {
   .certificado-item {
     width: 100%;
@@ -639,4 +638,3 @@ h1 {
     margin: auto;
   }
 }
-
