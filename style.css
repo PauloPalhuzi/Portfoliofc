@@ -613,4 +613,30 @@ h1 {
   cursor: pointer;
 }
 
+.miniatura {
+  /* ... seu CSS atual ... */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+.certificado-item p {
+  font-size: 0.95rem;
+  color: #eee;
+  margin-top: 8px;
+}
+.modal {
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+.modal[style*="display: block"] {
+  opacity: 1;
+}
+@media (max-width: 500px) {
+  .certificado-item {
+    width: 100%;
+  }
+
+  .miniatura {
+    width: 90%;
+    margin: auto;
+  }
+}
 
