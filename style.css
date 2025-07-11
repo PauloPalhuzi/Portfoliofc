@@ -1,3 +1,4 @@
+/* Reset básico e fonte */
 * {
     margin: 0;
     padding: 0;
@@ -21,8 +22,10 @@ html {
 body {
     background-color: var(--escuro);
     color: var(--claro);
+    min-height: 100vh;
 }
 
+/* Navegação fixa no topo */
 .navegacao {
     position: fixed;
     top: 0;
@@ -32,6 +35,7 @@ body {
     padding: 1.5rem;
 }
 
+/* Menu principal - horizontal no desktop */
 .menu {
     display: flex;
     justify-content: center;
@@ -39,13 +43,13 @@ body {
     gap: 3rem;
 }
 
+/* Links do menu */
 .menu-link {
     text-decoration: none;
     color: var(--claro);
     font-weight: 500;
     position: relative;
     padding: 0.5rem 0;
-
 }
 
 .menu-link::after {
@@ -57,26 +61,27 @@ body {
     left: 0;
     background: linear-gradient(90deg, var(--primaria), var(--secundaria));
     transition: width 0.5s ease;
-
 }
 
 .menu-link:hover::after {
     width: 100%;
 }
 
+/* Cabeçalho principal */
 .cabecalho {
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+    padding-top: 80px; /* Para não ficar atrás da nav fixa */
 }
 
-
+/* Foto do perfil com tamanho relativo e max-width para responsividade */
 .foto-perfil {
-    width: 350px;
-    height: 350px;
+    width: 40vw;
+    max-width: 350px;
+    height: auto;
     box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
     border-radius: 50%;
     border: 4px solid var(--vidro);
@@ -87,27 +92,37 @@ h1 {
     font-size: 3.5rem;
     color: var(--primaria);
     font-weight: bold;
-    margin: 20px;
+    margin: 20px 0;
+    text-align: center;
 }
 
 .cabecalho-sub-titulo {
     font-size: 1.5rem;
     color: var(--claro);
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-.sobre {
+/* Seções com espaçamento */
+.sobre,
+.projetos,
+.contatos {
     padding: 6rem 2rem;
-
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.sobre-titulo {
+/* Títulos das seções */
+.sobre-titulo,
+.projetos-titulo,
+.contatos-titulo {
     font-size: 3rem;
     color: var(--claro);
     text-align: center;
     margin-bottom: 20px;
-
 }
 
+/* Caixa do texto "Sobre" */
 .sobre-caixa {
     padding: 2rem;
     max-width: 800px;
@@ -116,30 +131,22 @@ h1 {
     border: 1px solid var(--vidro);
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.05);
-
 }
 
 .sobre-paragrafo {
     text-align: center;
     margin-bottom: 1.2rem;
-
+    line-height: 1.6rem;
 }
 
-.projetos {
-    padding: 6rem 2rem;
-
-}
-
+/* Projetos - grade responsiva */
 .projetos-caixa {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-
-
 }
 
+/* Cartão do projeto */
 .projetos-card {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 16px;
@@ -148,61 +155,39 @@ h1 {
     overflow: hidden;
     transition: all 0.5s ease;
     cursor: pointer;
-
-
-}
-
-.projetos-titulo {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 50px;
-
+    display: flex;
+    flex-direction: column;
 }
 
 .projetos-card:hover {
     box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
     transform: translateY(-10px) scale(1.03);
-
 }
 
+/* Imagem do projeto */
 .projetos-imagem {
-    height: 200px;
     width: 100%;
+    height: 200px;
     object-fit: cover;
-
 }
 
+/* Texto dentro do projeto */
 .caixa-textos-projeto {
     padding: 1.5rem;
-
+    flex-grow: 1;
 }
 
 .paragrafo-projetos {
     color: rgba(226, 232, 240, 0.8);
-    line-height: 1.25rem;
-
-
+    line-height: 1.4rem;
 }
 
 .info-projetos {
     margin-bottom: 5px;
-
+    font-weight: 600;
 }
 
-.contatos {
-    padding: 6rem 2rem;
-
-}
-
-.contatos-titulo {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 50px;
-
-
-
-}
-
+/* Formulário de contato */
 .formulario-contato {
     max-width: 600px;
     margin: 0 auto;
@@ -211,7 +196,6 @@ h1 {
     padding: 2rem;
     border: 1px solid var(--vidro);
     border-radius: 16px;
-
 }
 
 .campo-form {
@@ -222,8 +206,7 @@ h1 {
     color: var(--claro);
     border: 1px solid var(--vidro);
     outline: none;
-
-
+    font-size: 1rem;
 }
 
 .campo-form:focus {
@@ -233,7 +216,6 @@ h1 {
 
 .grupo-form {
     margin-bottom: 1.5rem;
-
 }
 
 .botao-form {
@@ -244,15 +226,16 @@ h1 {
     cursor: pointer;
     font-weight: bold;
     width: 100%;
-    transition: all 0.5 ease;
+    font-size: 1.1rem;
+    transition: all 0.5s ease;
 }
 
 .botao-form:hover {
     transform: translateY(-4px);
     box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
-
 }
 
+/* Fundo com partículas */
 .particulas {
     position: fixed;
     top: 0;
@@ -266,25 +249,113 @@ h1 {
         radial-gradient(circle at 90% 80%, var(--primaria) 0%, transparent 20%);
 }
 
+/* Animação da foto */
 @keyframes flutuar {
-
-    0%,100% {
+    0%, 100% {
         transform: translateY(0);
     }
-
     50% {
         transform: translateX(-20px);
     }
-
 }
 
+/* Links dos projetos */
 .projetos-link {
-    text-decoration: none; /* Remove o sublinhado */
-    color: inherit; /* Mantém a cor padrão do texto */
-    display: block; /* Garante que o link envolva todo o card */
+    text-decoration: none; /* Remove sublinhado */
+    color: inherit; /* Mantém cor do texto */
+    display: block; /* Link cobre todo o card */
 }
 
 .projetos-link:hover {
-    cursor: pointer; /* Mostra que é clicável */
-    opacity: 0.95; /* Pequeno feedback visual opcional */
+    cursor: pointer;
+    opacity: 0.95;
+}
+
+
+/* ========== MEDIA QUERIES ========== */
+
+/* Tablets e telas médias */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .foto-perfil {
+        width: 250px;
+        max-width: 80vw;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .cabecalho-sub-titulo {
+        font-size: 1.3rem;
+    }
+
+    .sobre-titulo,
+    .projetos-titulo,
+    .contatos-titulo {
+        font-size: 2.5rem;
+    }
+
+    .caixa-textos-projeto,
+    .sobre-caixa,
+    .formulario-contato {
+        padding: 1rem;
+    }
+
+    .projetos-imagem {
+        height: 180px;
+    }
+
+    .botao-form {
+        font-size: 1rem;
+        padding: 0.8rem 1.2rem;
+    }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+    .menu {
+        gap: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .foto-perfil {
+        width: 180px;
+        max-width: 70vw;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .cabecalho-sub-titulo {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+
+    .sobre-titulo,
+    .projetos-titulo,
+    .contatos-titulo {
+        font-size: 2rem;
+    }
+
+    .projetos-imagem {
+        height: 140px;
+    }
+
+    .campo-form {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .botao-form {
+        font-size: 0.9rem;
+        padding: 0.7rem 1rem;
+    }
 }
