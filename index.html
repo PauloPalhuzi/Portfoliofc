@@ -16,10 +16,6 @@
       <li><a href="#inicio" class="menu-link">Ínicio</a></li>
       <li><a href="#sobre" class="menu-link">Sobre</a></li>
       <li><a href="#projetos" class="menu-link">Projetos</a></li>
-      <li><a href="#hardskills" class="menu-link">Hard Skills</a></li>
-      <li><a href="#certificados" class="menu-link">Cursos</a></li>
-      <li><a href="#softskills" class="menu-link">Soft Skills</a></li>
-      <li><a href="#timeline" class="menu-link">Linha do Tempo</a></li>
       <li><a href="#contatos" class="menu-link">Contato</a></li>
     </ul>
   </nav>
@@ -34,11 +30,15 @@
     <h2 class="sobre-titulo">Sobre Mim</h2>
     <div class="sobre-caixa">
       <p class="sobre-paragrafo">
-        Sou Paulo Palhuzi, profissional em transição para a área de Tecnologia da Informação, atualmente cursando o 2º módulo de Desenvolvimento de Sistemas na ETEC Guararapes.
-        Tenho 7 anos de experiência administrativa, forte vivência internacional na Argentina (fluente em espanhol), e hoje atuo como estagiário de TI na Prefeitura Municipal de Guararapes.
-        Participei de um Bootcamp Full Stack de 200 horas com foco prático em C#, .NET, Angular e MySQL, desenvolvendo projetos que consolidaram minha lógica de programação.
+        Sou Paulo Palhuzi, profissional em transição para a área de Tecnologia da Informação, atualmente
+        cursando o 2º módulo de Desenvolvimento de Sistemas na ETEC Guararapes.
+        Tenho 7 anos de experiência administrativa, forte vivência internacional na Argentina (fluente em espanhol), e
+        hoje atuo como estagiário de TI na Prefeitura Municipal de Guararapes.
+        Participei de um Bootcamp Full Stack de 200 horas com foco prático em C#, .NET, Angular e MySQL, desenvolvendo
+        projetos que consolidaram minha lógica de programação.
         Tenho interesse especial em suporte técnico e, progressivamente, busco migrar para desenvolvimento de sistemas.
-        Possuo perfil proativo, excelente comunicação, disciplina e facilidade de aprendizado. Estou em busca de oportunidades para aplicar meus conhecimentos, crescer profissionalmente e contribuir com as equipes em que atuar.
+        Possuo perfil proativo, excelente comunicação, disciplina e facilidade de aprendizado. Estou em busca de
+        oportunidades para aplicar meus conhecimentos, crescer profissionalmente e contribuir com as equipes em que atuar.
       </p>
     </div>
   </section>
@@ -52,7 +52,16 @@
           <div class="caixa-textos-projeto">
             <h3 class="info-projetos">Projeto Loja e-commerce funcional</h3>
             <p class="paragrafo-projetos">
-              Loja virtual funcional com HTML5, CSS3, JS e PHP simulando operação real, com painel administrativo e funcionalidades completas.
+              Este projeto é uma loja virtual desenvolvida com foco em desempenho, usabilidade e organização de produtos.
+              Utiliza HTML5, CSS3 e JavaScript no front-end para criar uma interface moderna, responsiva e interativa, com
+              carrossel de produtos, filtros e um carrinho de compras dinâmico, onde os usuários podem adicionar ou remover
+              itens com atualização automática do valor total.
+              No back-end, foi utilizado PHP para gerenciar cadastros, login de usuários, sessões e o banco de dados,
+              garantindo uma estrutura funcional para simular a operação real de uma loja.
+              O sistema também inclui um painel administrativo, onde é possível cadastrar, editar e remover produtos de forma
+              prática e segura.
+              Este projeto representa uma aplicação completa de conhecimentos em desenvolvimento web, unindo tecnologias de
+              front-end e back-end em um ambiente integrado e funcional.
             </p>
           </div>
         </div>
@@ -60,86 +69,76 @@
 
       <a href="https://paulopalhuzi.github.io/Web-site-make-up/" target="_blank" class="projetos-link">
         <div class="projetos-card">
-          <img src="./img/projeto2.png" alt="Projeto 2" class="projetos-imagem" />
+          <img src="./img/projeto2.png" alt="Projeto 1" class="projetos-imagem" />
           <div class="caixa-textos-projeto">
             <h3 class="info-projetos">Make Glamour</h3>
             <p class="paragrafo-projetos">
-              E-commerce focado em cosméticos com layout responsivo e carrossel de produtos, usando HTML, CSS e JavaScript.
+              O Glamour Rose é um projeto de loja virtual desenvolvido com o objetivo de simular uma experiência real de
+              e-commerce voltado para o público feminino, com foco em cosméticos, beleza e bem-estar. A proposta do site é
+              unir estética, funcionalidade e desempenho, proporcionando uma navegação fluida e intuitiva para o usuário. A
+              interface foi construída utilizando HTML5, CSS3 e JavaScript, garantindo um visual elegante e moderno, com um
+              carrossel de produtos, categorias organizadas, e um sistema de carrinho de compras dinâmico, onde é possível
+              adicionar e remover itens com atualização automática do valor total. O layout é totalmente responsivo,
+              funcionando perfeitamente em computadores, tablets e celulares.
             </p>
           </div>
         </div>
       </a>
 
       <div class="projetos-card">
-        <img src="./img/projeto3.jpg" alt="Projeto 3" class="projetos-imagem" />
+        <img src="./img/projeto3.jpg" alt="Projeto 1" class="projetos-imagem" />
         <div class="caixa-textos-projeto">
-          <h3 class="info-projetos">Em breve</h3>
+          <h3 class="info-projetos">Embreve</h3>
           <p class="paragrafo-projetos">Loading...</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="hardskills" class="hardskills">
-    <h2 class="secao-titulo">Hard Skills</h2>
-    <div class="icones-skill">
-      <div class="icone-item">
-        <img src="./img/html5.svg" alt="HTML5">
-        <p>HTML5</p>
+  <section id="contatos" class="contatos">
+    <h2 class="contatos-titulo">Entre em Contato</h2>
+
+    <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+      <div class="grupo-form">
+        <input placeholder="Nome" class="campo-form" id="nome" />
       </div>
-      <div class="icone-item">
-        <img src="./img/css3.svg" alt="CSS3">
-        <p>CSS3</p>
+
+      <div class="grupo-form">
+        <textarea class="campo-form" placeholder="Digite sua Mensagem" rows="6" id="mensagem"></textarea>
       </div>
-      <div class="icone-item">
-        <img src="./img/javascript.svg" alt="JavaScript">
-        <p>JavaScript</p>
-      </div>
-      <div class="icone-item">
-        <img src="./img/mysql.svg" alt="MySQL">
-        <p>MySQL</p>
-      </div>
-      <div class="icone-item">
-        <img src="./img/csharp.svg" alt="C#">
-        <p>C# .NET</p>
-      </div>
+
+      <button type="submit" class="botao-form">Enviar WhatsApp</button>
+    </form>
+
+    <h2 class="redes-titulo">Redes Sociais</h2>
+    <div class="redes-sociais">
+      <a href="https://www.instagram.com/paulopalhuzi_/" target="_blank" class="icone-rede">
+        <img src="./img/2111463.png" alt="Instagram" />
+      </a>
+      <a href="https://github.com/paulopalhuzi" target="_blank" class="icone-rede">
+        <img src="./img/733553.png" alt="GitHub" />
+      </a>
+      <a href="https://linkedin.com/in/paulo-cesar-palhuzi-junior" target="_blank" class="icone-rede">
+        <img src="./img/174857.png" alt="LinkedIn" />
+      </a>
     </div>
   </section>
 
-  <section id="certificados" class="certificados">
-    <h2 class="secao-titulo">Cursos e Certificados</h2>
-    <ul class="lista-certificados">
-      <li><a href="#" target="_blank">Bootcamp DIO Full Stack (200h)</a></li>
-      <li><a href="#" target="_blank">Curso HTML, CSS e JS</a></li>
-      <li><a href="#" target="_blank">Fundamentos C# e .NET</a></li>
-    </ul>
-  </section>
+  <script>
+    function enviarWhats(event) {
+      event.preventDefault();
 
-  <section id="softskills" class="softskills">
-    <h2 class="secao-titulo">Soft Skills</h2>
-    <ul class="lista-soft">
-      <li>Trabalho em equipe, proatividade e liderança</li>
-      <li>Comunicação e atendimento técnico ao usuário</li>
-      <li>Lógica de programação, HTML, CSS, fundamentos C#/.NET</li>
-      <li>Banco de dados básico, MySQL e SQL</li>
-      <li>Ferramentas: GitHub, Visual Studio, SQL Server Manager</li>
-      <li>Metodologias ágeis: Scrum</li>
-      <li>Idiomas: Espanhol fluente, Inglês técnico (leitura)</li>
-    </ul>
-  </section>
+      const nome = document.getElementById("nome").value;
+      const mensagem = document.getElementById("mensagem").value;
+      const telefone = "5518997048001";
 
-  <section id="timeline" class="timeline">
-    <h2 class="secao-titulo">Linha do Tempo</h2>
-    <div class="linha-tempo">
-      <div class="evento">Ensino Médio - SESI 236</div>
-      <div class="evento">Medicina (PBL) - Universidad Nacional de Rosario (2015 - 2023)</div>
-      <div class="evento">Bootcamp DIO Full Stack (200h) - 2024</div>
-      <div class="evento">Técnico em Desenvolvimento de Sistemas - ETEC Guararapes (2025)</div>
-      <div class="evento">Estagiário de TI - Prefeitura de Guararapes (2025 - atual)</div>
-      <div class="evento">Auxiliar de Cartório - Cartório de Notas e Protesto (2020 - 2023)</div>
-      <div class="evento">Instrutor de Kung Fu - Associação Nakao (2013 - 2015)</div>
-      <div class="evento">Auxiliar Administrativo - Peças Scolar Silva (2013 - 2015)</div>
-      <div class="evento">Vivência Internacional na Argentina (2015 - 2023)</div>
-      <div class="evento">Projetos: Sistemas acadêmicos e lojas virtuais (HTML, C#, MySQL)</div>
-    </div>
-  </section>
+      const texto = Olá! Me chamo ${nome}, ${mensagem};
+      const msgFormatada = encodeURIComponent(texto);
+
+      const url = https://wa.me/${telefone}?text=${msgFormatada};
+      window.open(url, "_blank");
+    }
+  </script>
+</body>
+
+</html>
